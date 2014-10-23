@@ -242,7 +242,7 @@ end
 % end
 
 for n=1:3
-    if AX(n)
+    if AX(n) ~= 0
         %         set(AX(n),'YDir','reverse')
         %         set(AX(n),'YTick',(0:dy:maxy))
         %         set(AX(n),'YTickLabel',num2str((0:dy:maxy)'))
@@ -373,7 +373,7 @@ end
 
 % put axes in order
 for n=1:3
-    if AX(n)
+    if AX(n) ~= 0
         axes(AX(n))
     end
 end
